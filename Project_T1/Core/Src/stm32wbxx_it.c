@@ -22,6 +22,7 @@
 #include "stm32wbxx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "Serial_IT.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -201,10 +202,10 @@ void SysTick_Handler( void )
 /**
   * @brief This function handles USART1 global interrupt.
   */
-void USART1_IRQHandler(void)
+void USART1_IRQHandler( void )
 {
   /* USER CODE BEGIN USART1_IRQn 0 */
-
+  SerialItIrq();
   /* USER CODE END USART1_IRQn 0 */
   /* USER CODE BEGIN USART1_IRQn 1 */
 
