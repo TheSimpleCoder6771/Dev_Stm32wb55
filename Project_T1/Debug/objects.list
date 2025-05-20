@@ -1,3 +1,4 @@
+"./App/Serial/Src/Serial_IT.o"
 "./Core/Src/gpio.o"
 "./Core/Src/main.o"
 "./Core/Src/memorymap.o"
